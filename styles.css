@@ -1,0 +1,111 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(252, 249, 249);
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #583636;
+}
+.layout{
+    display: grid;
+    min-height: 100vh;
+
+    grid-template-areas:
+    "header"
+    "nav"
+    "main "
+    "footer";
+
+    grid-template-rows: auto auto 1fr auto;
+    gap: 10px;
+}
+
+.header{
+    grid-area: header;
+    background-color: rgb(220, 255, 243);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.header-izq img{
+    height: 150px;
+    border-radius: 65px;
+}
+
+.nav{
+    grid-area: nav;
+    background-color: rgb(153, 221, 221);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.nav ul{
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+.nav a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.main{
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.main img{
+    width: 800px;
+}
+.estrella::after{
+    content: "⭐⭐⭐⭐";
+}
+.contenedor-lugares{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    gap: 20px;
+}
+.lugar-mostrar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+}
+.lugar-mostrar img{
+    width: 250px;
+    height: 250px;
+    border-radius: 5%5%5%5%;
+}
+.textoDebajo{
+    text-align: center;
+    display: grid;
+    grid-template-rows: auto auto auto;
+}
+.footer{
+    grid-area: footer;
+    background-color: rgb(64, 151, 122);
+    display: flex;
+    justify-content: center;
+}
+.footer-content{
+    display: flex;
+    flex-direction: center;
+    gap: 140px;
+}
+
+.footer-content a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer-content ul{
+    list-style: none;
+    display: inline;
+}
