@@ -90,8 +90,3 @@ grid-row-gap: 0px;
     grid-area: 1 / 2 / 2 / 3;
     padding-left: 1rem;
     }
-
-.footer{
-    grid-area: footer;
-    border: black solid;
-}
