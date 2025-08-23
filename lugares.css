@@ -95,8 +95,6 @@ grid-row-gap: 0px;
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
     list-style: none;
-    padding: 0;
-    margin: 0;
 }
 .imagenesActividades li {
     background: #f8f8f8;
@@ -109,4 +107,36 @@ grid-row-gap: 0px;
 
 .imagenesActividades li:hover {
     transform: translateY(-5px);
+}
+.imagenesActividades img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+.imagenesComida {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 2fr));
+    gap: 30px;
+    margin-top: 20px;
+}
+.imagenesComida > div {
+    background: #f8f8f8;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+.imagenesComida img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.imagenesComida p {
+    font-size: 1rem;
+    text-align: center;
+    margin: 0;
 }
